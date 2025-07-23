@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Uniform Catalogue</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			/* Side-by-side layout */
+			.side-by-side-container {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 2rem;
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 2rem;
+			}
+			
+			.catalogue-section {
+				flex: 1;
+				min-width: 300px;
+			}
+			
+			.featured-section {
+				flex: 2;
+				min-width: 300px;
+			}
+			
+			/* Catalogue Section Styles */
+			.section-title {
+				color: #333;
+				font-size: 1.5rem;
+				font-weight: bold;
+				margin-bottom: 1.5rem;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				border-bottom: 2px solid #a179a7;
+				padding-bottom: 0.5rem;
+			}
+			
+			.category-grid {
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: 1rem;
+			}
+			
+			.category-item {
+				background: #fff;
+				border-radius: 6px;
+				padding: 1.2rem;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+				transition: all 0.3s ease;
+				border-left: 4px solid #a179a7;
+			}
+			
+			.category-item:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+				background-color: #e7c6e3;
+			}
+			
+			.category-title {
+				color: #2a5ca7;
+				font-size: 1rem;
+				font-weight: 600;
+				margin: 0;
+			}
+			
+			/* Featured Products Styles - 3 columns */
+			.featured-grid {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 1rem;
+			}
+			
+			.work-item {
+				background: #fff;
+				border-radius: 6px;
+				overflow: hidden;
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+				transition: all 0.3s ease;
+			}
+			
+			.work-item:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+			}
+			
+			.work-item h3 {
+				color: #2a5ca7;
+				font-size: 1rem;
+				margin: 0.5rem 1rem;
+			}
+			
+			.work-item p {
+				font-size: 0.9rem;
+				margin: 0 1rem 1rem;
+				color: #666;
+			}
+			
+
+			/* Responsive adjustments */
+			@media screen and (max-width: 980px) {
+				.side-by-side-container {
+					flex-direction: column;
+				}
+				
+				.catalogue-section, .featured-section {
+					width: 100%;
+				}
+				
+				.featured-grid {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+
+			@media screen and (max-width: 600px) {
+				.featured-grid {
+					grid-template-columns: 1fr !important; /* Force single column */
+					gap: 1.5rem; /* Increase vertical spacing */
+				}
+				
+				.work-item {
+					margin-bottom: 1rem; /* Extra space between items */
+				}
+				
+				/* Optional: Adjust side-by-side container for mobile */
+				.side-by-side-container {
+					margin: 1em;
+					padding: 1rem;
+					gap: 2rem;
+				}
+			}
+			
+		</style>
+	</head>
+	<body class="is-preload">
+	
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
+					<h1><strong>Uniform Solutions</strong></h1><br />
+					<h3>Quality workwear for every industry</h3>
+				</div>
+			</header>
+
+		<!-- Main -->
+					<div id="wrapper">
+					<nav id="nav" >
+						<ul>
+							<li><a href="index.html" class="active">HOME</a></li>
+							<li><a href="generic.html">CATALOGUE</a></li>
+							<li><a href="#">CORPORATE GIFTS</a></li>
+							<li><a href="#">Get Started</a></li>
+						</ul>
+					</nav>
+					
+				<div id="main">
+
+				<!-- Side-by-Side Sections -->
+				<div class="side-by-side-container">
+					<!-- Catalogue Section -->
+					<section class="catalogue-section">
+						<h2 class="section-title">Our Catalogue</h2>
+						
+						<div class="category-grid">
+							<div class="category-item">
+								<a href="CorporateUniform.html"><h3 class="category-title" >Corporate Uniform</h3></a>
+							</div>
+							
+							<div class="category-item">
+								<a href="IndustrialWorkWear&PPE.html"><h3 class="category-title">Industrial Work Wear & PPE</h3></a>
+							</div>
+							
+							<div class="category-item">
+								<a href="Hospitality.html"><h3 class="category-title">Hospitality</h3></a>
+							</div>
+							
+							<div class="category-item">
+								<h3 class="category-title">Healthcare & Sports</h3>
+							</div>
+							
+							<div class="category-item">
+								<h3 class="category-title">Facility Management</h3>
+							</div>
+							
+							<div class="category-item">
+								<h3 class="category-title">Uniform Accessories</h3>
+							</div>
+						</div>
+					</section>
+
+					<!-- Featured Products Section -->
+					<section class="featured-section">
+						<h2 class="section-title">Featured Products</h2>
+						<div class="featured-grid">
+							<article class="work-item">
+								<a href="CorporateUniform.html" class="image fit thumb"><img src="images/Corporate-Uniform-opt.png" alt="Corporate Uniform" /></a>
+								<h3>Corporate Uniform</h3>
+								<p>Professional attire for business environments</p>
+							</article>
+							
+							<article class="work-item">
+								<a href="#" class="image fit thumb"><img src="images/Industrial-Work-wear-PPE-opt.png" alt="Industrial Work Wear & PPE" /></a>
+								<h3>Industrial Work Wear & PPE</h3>
+								<p>Durable protection for industrial workers</p>
+							</article>
+							
+							<article class="work-item">
+								<a href="Hospitality.html" class="image fit thumb"><img src="images/Hospitality-opt.png" alt="Hospitality" /></a>
+								<h3>Hospitality</h3>
+								<p>Stylish outfits for service industry</p>
+							</article>
+							
+							<article class="work-item">
+								<a href="#" class="image fit thumb"><img src="images/HealthCare-Sports-opt.png" alt="Healthcare & Sports" /></a>
+								<h3>Healthcare & Sports</h3>
+								<p>Comfortable medical uniforms</p>
+							</article>
+							
+							<article class="work-item">
+								<a href="#" class="image fit thumb"><img src="images/Facility-Management-opt.png" alt="Facility Management" /></a>
+								<h3>Facility Management</h3>
+								<p>Functional uniforms for facility staff</p>
+							</article>
+							
+							<article class="work-item">
+								<a href="#" class="image fit thumb"><img src="images/Uniform-Accessories-opt.png" alt="Uniform Accessories" /></a>
+								<h3>Uniform Accessories</h3>
+								<p>Complete your professional look</p>
+							</article>
+						</div>
+					</section>
+				</div>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<!-- <ul class="copyright">
+						<li>&copy; Uniform Solutions</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul> -->
+				</div>
+			</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+
+	</body>
+</html>

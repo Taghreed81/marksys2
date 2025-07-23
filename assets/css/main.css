@@ -3556,8 +3556,64 @@ input, select, textarea {
     }
     
     /* Individual Step Colors */
-    .style1 { background: #5d81bd; } /* Blue */
-    .style2 { background: #71aa80; } /* Green */
-    .style3 { background: #b3372c; } /* Red */
-    .style4 { background: #cfa629; } /* Yellow */
-    .style5 { background: #ae93db; } /* Purple */
+.style1 { background: linear-gradient(45deg, #4fa49a, #4361c2); }
+.style2 { background: linear-gradient(45deg, #4361c2, #8a2be2); }
+.style3 { background: linear-gradient(45deg, #8a2be2, #ff6b6b); }
+.style4 { background: linear-gradient(45deg, #ff6b6b, #feca57); }
+.style5 { background: linear-gradient(45deg, #feca57, #4fa49a); }
+
+/* Navigation Bar Styles */
+/* Navigation Bar Fix */
+#nav {
+  position: relative;
+  z-index: 1000;
+  background: linear-gradient(45deg, #4fa49a, #4361c2);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+#nav li {
+  position: relative;
+}
+
+#nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.75rem 1.25rem;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+#nav a:hover, #nav a.active {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
